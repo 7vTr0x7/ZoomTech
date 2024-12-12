@@ -6,8 +6,10 @@ export default {
       backdropBlur: {
         60: "60%",
       },
+      fontFamily: {
+        plus: ["Plus Jakarta Sans", "sans-serif"],
+      },
     },
   },
   plugins: [],
 };
-
