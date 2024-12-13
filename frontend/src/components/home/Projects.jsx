@@ -41,7 +41,7 @@ const Projects = () => {
         <BsArrowRightCircle />
       </div>
 
-      <div className="flex items-center overflow-x-auto mt-10 scrollbar-hide space-x-6 sm:space-x-10">
+      <div className="flex items-center overflow-x-auto mt-10 scrollbar-hide space-x-3 sm:space-x-4">
         <div className="relative inline-block min-w-[300px] sm:min-w-[400px]">
           <img
             alt="image"
@@ -65,6 +65,13 @@ const Projects = () => {
             src={dribbleShot1}
             className="h-72 sm:h-96 object-cover"
           />
+          <div className="absolute text-sm top-8 left-10 text-white flex items-center gap-2">
+            <div className="h-[2px] w-10 bg-[#FFFFFF]"></div>
+            <p>Ai Corporation. 2023</p>
+          </div>
+          <div className="absolute bottom-8 left-10 text-white flex items-center gap-2">
+            <p>Ai Wave - Ai Chatbot Mobile App</p>
+          </div>
         </div>
         <div className="relative inline-block min-w-[300px] sm:min-w-[400px]">
           <img
@@ -72,6 +79,13 @@ const Projects = () => {
             src={dribbleShot1}
             className="h-72 sm:h-96 object-cover"
           />
+          <div className="absolute text-sm top-8 left-10 text-white flex items-center gap-2">
+            <div className="h-[2px] w-10 bg-[#FFFFFF]"></div>
+            <p>Lancer Corporation. 2023</p>
+          </div>
+          <div className="absolute bottom-8 left-10 text-white flex items-center gap-2">
+            <p>App Lancer - Freelance Mobile App</p>
+          </div>
         </div>
         <div className="relative inline-block min-w-[300px] sm:min-w-[400px]">
           <img
