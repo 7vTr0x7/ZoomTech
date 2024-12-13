@@ -4,6 +4,7 @@ import bg from "../../assets/images/Background.png";
 import HeroSection from "../../components/home/HeroSection";
 import Services from "../../components/home/Services";
 import Projects from "../../components/home/Projects";
+import Reviews from "../../components/home/Reviews";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <HeroSection />
       <Services />
       <Projects />
+      <Reviews />
     </div>
   );
 };

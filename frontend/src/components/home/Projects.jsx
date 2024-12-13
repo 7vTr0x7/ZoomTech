@@ -1,13 +1,26 @@
-import React from "react";
-import { BsArrowLeftCircle } from "react-icons/bs";
-import { BsArrowRightCircle } from "react-icons/bs";
+import React, { useRef } from "react";
+import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 
 import dribbleShot from "../../assets/images/DribbbleShot.png";
 import dribbleShot1 from "../../assets/images/Dribbbleshot1.png";
 
 const Projects = () => {
+  const scrollRef = useRef(null);
+
+  const scrollLeft = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: -200, behavior: "smooth" });
+    }
+  };
+
+  const scrollRight = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: 200, behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="py-5 px-6 md:px-16 mt-5">
+    <div className="py-5 px-6 md:px-16 mt-5 select-none">
       <div className="grid md:grid-cols-2 gap-6 items-center">
         <p className="font-semibold text-xl md:text-3xl text-gray-800">
           Our Projects
@@ -37,11 +50,13 @@ const Projects = () => {
       </div>
 
       <div className="flex items-center justify-center gap-10 text-2xl mt-8">
-        <BsArrowLeftCircle />
-        <BsArrowRightCircle />
+        <BsArrowLeftCircle onClick={scrollLeft} className="cursor-pointer" />
+        <BsArrowRightCircle onClick={scrollRight} className="cursor-pointer" />
       </div>
 
-      <div className="flex items-center overflow-x-auto mt-10 scrollbar-hide space-x-3 sm:space-x-4">
+      <div
+        ref={scrollRef}
+        className="flex items-center overflow-x-auto mt-10 scrollbar-hide space-x-3 sm:space-x-4">
         <div className="relative inline-block min-w-[300px] sm:min-w-[400px]">
           <img
             alt="image"
