@@ -12,7 +12,7 @@ const Projects = () => {
         <p className="font-semibold text-xl md:text-3xl text-gray-800">
           Our Projects
         </p>
-        <p className="text-xs text-gray-600 leading-relaxed">
+        <p className="text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed">
           We are a passionate team of digital marketing enthusiasts dedicated to
           helping businesses succeed in the digital world. With years of
           experience and a deep understanding of the ever-evolving online
@@ -21,30 +21,33 @@ const Projects = () => {
         </p>
       </div>
 
-      <div className="flex items-center justify-between mt-8">
-        <div className="flex flex-wrap gap-5">
-          <button className="px-10 py-1 rounded-3xl text-sm font-semibold hover:bg-[#FFD277] hover:text-black text-[#FFD277] border border-[#FFD277]">
-            All Work [20]
-          </button>
-          <button className="px-10 py-1 rounded-3xl text-sm font-semibold hover:bg-[#FFD277] hover:text-black text-[#FFD277] border border-[#FFD277]">
-            UI/UX Design [20]
-          </button>
-          <button className="px-10 py-1 rounded-3xl text-sm font-semibold hover:bg-[#FFD277] hover:text-black text-[#FFD277] border border-[#FFD277]">
-            Digital Marketing [20]
-          </button>
-          <button className="px-10 py-1 rounded-3xl text-sm font-semibold hover:bg-[#FFD277] hover:text-black text-[#FFD277] border border-[#FFD277]">
-            Branding [20]
-          </button>
-        </div>
-        <div className="flex gap-5 text-2xl items-center">
-          <BsArrowLeftCircle />
-          <BsArrowRightCircle />
-        </div>
+      <div className="flex flex-wrap gap-5 justify-center md:justify-between mt-8">
+        <button className="px-8 py-2 sm:px-10 sm:py-1 rounded-3xl text-sm sm:text-base font-semibold hover:bg-[#FFD277] hover:text-black text-[#FFD277] border border-[#FFD277]">
+          All Work [20]
+        </button>
+        <button className="px-8 py-2 sm:px-10 sm:py-1 rounded-3xl text-sm sm:text-base font-semibold hover:bg-[#FFD277] hover:text-black text-[#FFD277] border border-[#FFD277]">
+          UI/UX Design [20]
+        </button>
+        <button className="px-8 py-2 sm:px-10 sm:py-1 rounded-3xl text-sm sm:text-base font-semibold hover:bg-[#FFD277] hover:text-black text-[#FFD277] border border-[#FFD277]">
+          Digital Marketing [20]
+        </button>
+        <button className="px-8 py-2 sm:px-10 sm:py-1 rounded-3xl text-sm sm:text-base font-semibold hover:bg-[#FFD277] hover:text-black text-[#FFD277] border border-[#FFD277]">
+          Branding [20]
+        </button>
       </div>
 
-      <div className="flex items-center overflow-x-auto mt-10 scrollbar-hide">
-        <div className="relative inline-block min-w-[400px]">
-          <img alt="image" src={dribbleShot} className="h-96 object-cover" />
+      <div className="flex items-center justify-center gap-10 text-2xl mt-8">
+        <BsArrowLeftCircle />
+        <BsArrowRightCircle />
+      </div>
+
+      <div className="flex items-center overflow-x-auto mt-10 scrollbar-hide space-x-6 sm:space-x-10">
+        <div className="relative inline-block min-w-[300px] sm:min-w-[400px]">
+          <img
+            alt="image"
+            src={dribbleShot}
+            className="h-72 sm:h-96 object-cover"
+          />
           <div
             className="bg-[#F5B22B] absolute px-5 py-12 rounded-full text-center text-white"
             style={{
@@ -56,14 +59,26 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="relative inline-block min-w-[400px]">
-          <img alt="image" src={dribbleShot1} className="h-96 object-cover" />
+        <div className="relative inline-block min-w-[300px] sm:min-w-[400px]">
+          <img
+            alt="image"
+            src={dribbleShot1}
+            className="h-72 sm:h-96 object-cover"
+          />
         </div>
-        <div className="relative inline-block min-w-[400px]">
-          <img alt="image" src={dribbleShot1} className="h-96 object-cover" />
+        <div className="relative inline-block min-w-[300px] sm:min-w-[400px]">
+          <img
+            alt="image"
+            src={dribbleShot1}
+            className="h-72 sm:h-96 object-cover"
+          />
         </div>
-        <div className="relative inline-block min-w-[400px]">
-          <img alt="image" src={dribbleShot1} className="h-96 object-cover" />
+        <div className="relative inline-block min-w-[300px] sm:min-w-[400px]">
+          <img
+            alt="image"
+            src={dribbleShot1}
+            className="h-72 sm:h-96 object-cover"
+          />
         </div>
       </div>
     </div>
