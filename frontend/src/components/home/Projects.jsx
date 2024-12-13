@@ -65,11 +65,11 @@ const Projects = () => {
             src={dribbleShot1}
             className="h-72 sm:h-96 object-cover"
           />
-          <div className="absolute text-sm top-8 left-10 text-white flex items-center gap-2">
+          <div className="absolute text-sm top-5 left-6 md:top-8 md:left-10 text-white flex items-center gap-2">
             <div className="h-[2px] w-10 bg-[#FFFFFF]"></div>
             <p>Ai Corporation. 2023</p>
           </div>
-          <div className="absolute bottom-8 left-10 text-white flex items-center gap-2">
+          <div className="absolute bottom-5 left-5 md:bottom-8 md:left-10 text-white flex items-center gap-2">
             <p>Ai Wave - Ai Chatbot Mobile App</p>
           </div>
         </div>
@@ -79,11 +79,11 @@ const Projects = () => {
             src={dribbleShot1}
             className="h-72 sm:h-96 object-cover"
           />
-          <div className="absolute text-sm top-8 left-10 text-white flex items-center gap-2">
+          <div className="absolute text-sm top-5 left-6 md:top-8 md:left-10 text-white flex items-center gap-2">
             <div className="h-[2px] w-10 bg-[#FFFFFF]"></div>
             <p>Lancer Corporation. 2023</p>
           </div>
-          <div className="absolute bottom-8 left-10 text-white flex items-center gap-2">
+          <div className="absolute bottom-5 left-5 md:bottom-8 md:left-10 text-white flex items-center gap-2">
             <p>App Lancer - Freelance Mobile App</p>
           </div>
         </div>
