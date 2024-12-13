@@ -41,7 +41,7 @@ const HeroSection = () => {
                 />
               </div>
 
-              <div className="bg-[#F0F0F0] px-4 sm:px-6 py-4 rounded-xl flex flex-col gap-5 w-full md:w-5/12 min-h-[230px]">
+              <div className="bg-[#F0F0F0] px-4 sm:px-6 py-4 rounded-xl flex flex-col gap-5 w-full md:w-5/12 md:min-h-[230px] min-h-[180px]">
                 <p className="text-3xl sm:text-4xl md:text-6xl text-black font-extrabold">
                   230+
                 </p>
@@ -55,7 +55,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mt-5">
-        <div className="col-span-7 flex flex-col justify-between">
+        <div className="md:col-span-7 col-span-12 flex flex-col justify-between">
           <div className="flex items-center gap-14 mt-5">
             <button className=" flex items-center gap-8 px-6 py-2 border bg-black text-white rounded-3xl transition duration-300">
               <p>Contact us</p>
@@ -64,20 +64,20 @@ const HeroSection = () => {
             <p className="underline text-sm font-medium">View Services</p>
           </div>
 
-          <div className="flex items-center gap-16">
+          <div className="flex items-center gap-16 md:mt-0 mt-3">
             <div className="text-sm font-medium">
               <p> {`Trusted by the world's `}</p>
               <p> {`biggest brands`}</p>
             </div>
-            <div className="flex items-center gap-5">
+            <div className="flex flex-wrap items-center gap-5">
               <img alt="company1" src={company1} />
               <img alt="company2" src={company2} />
               <img alt="company3" src={company3} />
             </div>
           </div>
         </div>
-        <div className="col-span-5 ">
-          <img alt="stats" src={bars} />
+        <div className="md:col-span-5 col-span-12  w-full">
+          <img alt="stats" src={bars} className="w-full" />
         </div>
       </div>
     </div>
