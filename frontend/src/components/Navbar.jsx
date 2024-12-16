@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import logo from "../assets/images/logo.png";
 import { IoIosArrowDown } from "react-icons/io";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navigate = useNavigate();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -12,21 +15,35 @@ const Navbar = () => {
     <nav className="bg-white shadow-lg rounded-b-lg md:mx-20 md:px-16 px-6 py-4">
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-14">
-          <div className="flex items-center gap-1 ">
+          <div
+            className="flex items-center gap-1 "
+            onClick={() => navigate("/")}>
             <img alt="Zoom Tech Logo" src={logo} className="h-6 w-6" />
             <span className="font-semibold text-lg">Zoom Tech.</span>
           </div>
           <ul className="hidden md:flex items-center gap-8 text-sm font-medium">
-            <li className="flex items-center gap-1 cursor-pointer hover:text-blue-600">
+            <li
+              className="flex items-center gap-1 cursor-pointer hover:text-blue-600"
+              onClick={() => navigate("/services")}>
               <span>Services</span>
               <IoIosArrowDown />
             </li>
-            <li className="cursor-pointer hover:text-blue-600">About Us</li>
-            <li className="cursor-pointer hover:text-blue-600">Blogs</li>
+            <li
+              className="cursor-pointer hover:text-blue-600"
+              onClick={() => navigate("/about-us")}>
+              About Us
+            </li>
+            <li
+              className="cursor-pointer hover:text-blue-600"
+              onClick={() => navigate("/blogs")}>
+              Blogs
+            </li>
           </ul>
         </div>
 
-        <button className="hidden md:inline-block px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white transition duration-300">
+        <button
+          className="hidden md:inline-block px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white transition duration-300"
+          onClick={() => navigate("/contact-us")}>
           Contact Us
         </button>
 
@@ -40,13 +57,25 @@ const Navbar = () => {
 
       {isMenuOpen && (
         <ul className="mt-4 space-y-2 text-sm font-medium md:hidden">
-          <li className="flex items-center gap-1 cursor-pointer hover:text-blue-600">
+          <li
+            className="flex items-center gap-1 cursor-pointer hover:text-blue-600"
+            onClick={() => navigate("/services")}>
             <span>Services</span>
           </li>
-          <li className="cursor-pointer hover:text-blue-600">About Us</li>
-          <li className="cursor-pointer hover:text-blue-600">Blogs</li>
+          <li
+            className="cursor-pointer hover:text-blue-600"
+            onClick={() => navigate("/about-us")}>
+            About Us
+          </li>
+          <li
+            className="cursor-pointer hover:text-blue-600"
+            onClick={() => navigate("/blogs")}>
+            Blogs
+          </li>
           <li>
-            <button className="w-full px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white transition duration-300">
+            <button
+              className="w-full px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white transition duration-300"
+              onClick={() => navigate("/contact-us")}>
               Contact Us
             </button>
           </li>
