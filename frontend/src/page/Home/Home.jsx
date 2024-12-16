@@ -7,6 +7,7 @@ import Reviews from "../../components/home/Reviews";
 import Services from "../../components/home/Services";
 import Navbar from "../../components/Navbar";
 import SEOServiceCards from "../../components/home/SEOServiceCards";
+import Banner from "../../components/home/Banner";
 const Home = () => {
   return (
     <div
@@ -19,6 +20,7 @@ const Home = () => {
       <Reviews />
       <FAQSection />
       <SEOServiceCards />
+      <Banner />
     </div>
   );
 };

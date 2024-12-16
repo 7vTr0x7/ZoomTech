@@ -27,7 +27,7 @@ const SEOServiceCards = () => {
   ];
 
   return (
-    <div className="min-h-screen py-20">
+    <div className=" pt-20 pb-28">
       <div className="px-20 md:mx-auto md:grid md:grid-cols-2 md:gap-8 md:items-center">
         <div>
           <h1 className="text-4xl md:text-[40px] font-semibold text-gray-800 mb-4">
