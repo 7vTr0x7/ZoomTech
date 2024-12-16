@@ -8,6 +8,7 @@ import Services from "../../components/home/Services";
 import Navbar from "../../components/Navbar";
 import SEOServiceCards from "../../components/home/SEOServiceCards";
 import Banner from "../../components/home/Banner";
+import Footer from "../../components/Footer";
 const Home = () => {
   return (
     <div
@@ -21,6 +22,7 @@ const Home = () => {
       <FAQSection />
       <SEOServiceCards />
       <Banner />
+      <Footer />
     </div>
   );
 };
