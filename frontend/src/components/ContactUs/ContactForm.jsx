@@ -8,18 +8,19 @@ const ContactForm = () => {
     <div className="bg-[#FFF6E5] p-8 rounded-3xl shadow-lg  mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
         <h2 className="text-yellow-600 text-lg font-semibold">Get In Touch</h2>
-        <h1 className="text-3xl font-bold mt-2">Let’s Chat, Reach Out to Us</h1>
-        <p className="text-gray-600 mt-2">
+        <h1 className="text-5xl font-bold mt-2">Let’s Chat, Reach Out to Us</h1>
+        <p className="text-gray-600 mt-2 mb-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac ali.
         </p>
+        <hr className="bg-black text-black" />
         <form className="mt-6">
           <div className="mb-4">
             <label className="block text-gray-700">Name</label>
             <input
               type="text"
               placeholder="Chris Evans"
-              className="w-full mt-2 p-3 border rounded-lg bg-gray-100"
+              className="w-full mt-2 p-3 border rounded-lg bg-[#F9F9F9]"
             />
           </div>
           <div className="mb-4">
@@ -27,14 +28,14 @@ const ContactForm = () => {
             <input
               type="email"
               placeholder="Chris Evans"
-              className="w-full mt-2 p-3 border rounded-lg bg-gray-100"
+              className="w-full mt-2 p-3 border rounded-lg bg-[#F9F9F9]"
             />
           </div>
           <div className="mb-4">
             <label className="block text-gray-700">Message</label>
             <textarea
               placeholder="Leave us a message"
-              className="w-full mt-2 p-3 border rounded-lg bg-gray-100 h-32"></textarea>
+              className="w-full mt-2 p-3 border rounded-lg bg-[#F9F9F9] h-44"></textarea>
           </div>
           <div className="flex justify-between items-center mt-6">
             <p className="text-gray-600 ml-4">
@@ -52,9 +53,9 @@ const ContactForm = () => {
         <img
           src={contactImage}
           alt="Random"
-          className="rounded-lg mb-4 w-full max-w-[300px]"
+          className="rounded-lg  w-full max-w-[400px] max-h-[500px]"
         />
-        <div className="flex flex-col items-start justify-center mt-6 space-y-4 bg-[#F9F9F9] px-6 py-3 w-full max-w-[300px]">
+        <div className="flex flex-col items-start justify-center mt-6 space-y-4 bg-[#F9F9F9] px-6 py-3 w-full max-w-[400px]">
           <div className="w-full">
             <div className="flex items-center bg-white p-3 rounded-2xl w-full">
               <FaEnvelope className="text-yellow-500 text-3xl mr-3 bg-yellow-100 rounded-full p-2" />

@@ -14,7 +14,7 @@ const OfficeAddress = () => {
         <img
           src="https://via.placeholder.com/300x300"
           alt="Map"
-          className="w-full h-96 rounded-lg"
+          className="w-full h-96 rounded-3xl"
         />
       </div>
     </div>

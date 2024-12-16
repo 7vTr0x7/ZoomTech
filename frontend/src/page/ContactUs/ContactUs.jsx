@@ -11,10 +11,10 @@ const ContactUs = () => {
       className="bg-cover bg-center h-full font-plus"
       style={{ backgroundImage: `url(${bg})` }}>
       <Navbar />
-      <div className="my-10 mx-20">
+      <div className="my-10 mx-4 md:mx-20">
         <ContactForm />
       </div>
-      <div className="mb-10 mx-20">
+      <div className="mb-10 mx-4 md:mx-20">
         <OfficeAddress />
       </div>
       <Footer />
