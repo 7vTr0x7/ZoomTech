@@ -1,11 +1,12 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
 import bg from "../../assets/images/Background.png";
+import FAQSection from "../../components/home/FAQSection";
 import HeroSection from "../../components/home/HeroSection";
-import Services from "../../components/home/Services";
 import Projects from "../../components/home/Projects";
 import Reviews from "../../components/home/Reviews";
-
+import Services from "../../components/home/Services";
+import Navbar from "../../components/Navbar";
+import SEOServiceCards from "../../components/home/SEOServiceCards";
 const Home = () => {
   return (
     <div
@@ -16,6 +17,8 @@ const Home = () => {
       <Services />
       <Projects />
       <Reviews />
+      <FAQSection />
+      <SEOServiceCards />
     </div>
   );
 };
