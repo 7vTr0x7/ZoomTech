@@ -5,7 +5,7 @@ import contactImage from "../../assets/images/contactImage.png";
 
 const ContactForm = () => {
   return (
-    <div className="bg-[#FFF6E5] p-8 rounded-3xl shadow-lg  mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="bg-white p-8 rounded-3xl shadow-lg  mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
         <h2 className="text-yellow-600 text-lg font-semibold">Get In Touch</h2>
         <h1 className="text-5xl font-bold mt-2">Let’s Chat, Reach Out to Us</h1>
