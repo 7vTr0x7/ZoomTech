@@ -4,10 +4,10 @@ import bg from "../../assets/images/servicesBg.png";
 const ServicesHeader = () => {
   return (
     <div
-      className="bg-cover bg-center h-[50vh] sm:h-[70vh] font-plus text-white flex justify-center items-center text-center px-6 sm:px-16 lg:px-56"
+      className="bg-cover bg-center h-[50vh] sm:h-[80vh] font-plus text-white flex justify-center items-center text-center px-6 sm:px-16 lg:px-56"
       style={{ backgroundImage: `url(${bg})` }}>
       <div>
-        <div className="mb-6 text-3xl sm:text-4xl lg:text-5xl font-bold flex items-center justify-center">
+        <div className="mb-6 text-3xl sm:text-4xl lg:text-5xl font-bold flex items-center justify-center mt-16">
           <p className="relative p-4 text-black rounded-xl">
             <span
               className="absolute inset-0 bg-[#E3AB39] rounded-xl z-0"

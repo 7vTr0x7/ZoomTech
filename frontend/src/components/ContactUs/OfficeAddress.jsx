@@ -10,9 +10,9 @@ const OfficeAddress = () => {
           vulputate libero et velit interdum, ac aliquet odio matti.
         </p>
       </div>
-      <div className="md:w-1/2">
+      <div className="md:w-1/2  rounded-3xl">
         <img
-          src="https://via.placeholder.com/300x300"
+          src="https://placehold.co/300x300"
           alt="Map"
           className="w-full h-96 rounded-3xl"
         />

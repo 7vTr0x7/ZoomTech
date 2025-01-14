@@ -12,11 +12,11 @@ const Navbar = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <nav className="bg-white shadow-lg rounded-b-lg md:mx-20 md:px-16 px-6 py-4">
-      <div className="flex justify-between items-center">
+    <nav className="absolute top-0 left-0 w-full h-20   px-4 lg:px-16 z-50">
+      <div className="container mx-auto flex justify-between items-center h-full bg-white shadow-lg px-12 rounded-b-lg">
         <div className="flex items-center gap-14">
           <div
-            className="flex items-center gap-1 "
+            className="flex items-center gap-1 cursor-pointer"
             onClick={() => navigate("/")}>
             <img alt="Zoom Tech Logo" src={logo} className="h-6 w-6" />
             <span className="font-semibold text-lg">Zoom Tech.</span>
@@ -56,7 +56,7 @@ const Navbar = () => {
       </div>
 
       {isMenuOpen && (
-        <ul className="mt-4 space-y-2 text-sm font-medium md:hidden">
+        <ul className="mt-4 pace-y-2s text-sm font-medium md:hidden bg-white p-4 rounded-lg shadow-lg">
           <li
             className="flex items-center gap-1 cursor-pointer hover:text-blue-600"
             onClick={() => navigate("/services")}>

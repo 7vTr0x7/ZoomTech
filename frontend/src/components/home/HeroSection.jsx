@@ -8,10 +8,13 @@ import company3 from "../../assets/images/Company3.png";
 import bars from "../../assets/images/group1.png";
 
 import { LuArrowRight } from "react-icons/lu";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="mt-10 px-6 md:px-20">
+    <div className="pt-24 px-6 md:px-20">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
         <div className="md:col-span-7 flex flex-col justify-between r">
           <p className="text-3xl sm:text-4xl md:text-6xl font-semibold text-black pr-0 sm:pr-4 md:pr-8">
@@ -57,11 +60,17 @@ const HeroSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mt-5">
         <div className="md:col-span-7 col-span-12 flex flex-col justify-between">
           <div className="flex items-center gap-14 mt-5">
-            <button className=" flex items-center gap-8 px-6 py-2 border bg-black text-white rounded-3xl transition duration-300">
+            <button
+              className=" flex items-center gap-8 px-6 py-2 border bg-black text-white rounded-3xl transition duration-300"
+              onClick={() => navigate("/contact-us")}>
               <p>Contact us</p>
               <LuArrowRight className="text-lg" />
             </button>
-            <p className="underline text-sm font-medium">View Services</p>
+            <p
+              className="underline text-sm font-medium cursor-pointer"
+              onClick={() => navigate("/services")}>
+              View Services
+            </p>
           </div>
 
           <div className="flex items-center gap-16 md:mt-0 mt-3">

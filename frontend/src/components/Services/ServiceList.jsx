@@ -1,6 +1,7 @@
 import React from "react";
 import { GoArrowRight } from "react-icons/go";
 import dribbleShot from "../../assets/images/Dribbbleshot.png";
+import { useNavigate } from "react-router-dom";
 
 const ServiceList = () => {
   const services = [
@@ -16,7 +17,13 @@ const ServiceList = () => {
       id: 3,
       service: "Digital Marketing",
     },
+    {
+      id: 4,
+      service: "UI/UX Design",
+    },
   ];
+
+  const navigate = useNavigate();
 
   return (
     <div className="container mx-auto px-4 sm:px-6">
@@ -38,7 +45,18 @@ const ServiceList = () => {
              w-[80px] h-[80px] ml-[0px] mb-[0px]
              sm:w-[100px] sm:h-[100px] sm:ml-[0px]
              md:w-[120px] md:h-[120px] md:ml-[-20px] md:mb-[0px]">
-                <p className="text-black font-semibold text-xs sm:text-sm text-center">
+                <p
+                  className="text-black font-semibold text-xs sm:text-sm text-center"
+                  onClick={() =>
+                    navigate(
+                      `/services/${service.service
+                        .toLowerCase()
+                        .replace(" ", "-")}/project-details`,
+                      {
+                        state: { service },
+                      }
+                    )
+                  }>
                   View Projects
                 </p>
               </div>
@@ -57,7 +75,18 @@ const ServiceList = () => {
               torquent per conubia nostra, per inceptos himenaeos.
             </p>
 
-            <button className="inline-flex items-center justify-center mt-4 md:mt-6 bg-black text-white py-2 px-4 rounded-3xl w-fit mx-auto md:mx-0">
+            <button
+              className="inline-flex items-center justify-center mt-4 md:mt-6 bg-black text-white py-2 px-4 rounded-3xl w-fit mx-auto md:mx-0"
+              onClick={() =>
+                navigate(
+                  `/services/${service.service
+                    .toLowerCase()
+                    .replace(" ", "-")}`,
+                  {
+                    state: { service },
+                  }
+                )
+              }>
               <span className="mr-6 font-medium">View Details</span>
               <GoArrowRight className="text-xl" />
             </button>

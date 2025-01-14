@@ -14,7 +14,7 @@ const AboutUs = () => {
       className="bg-cover bg-center h-full font-plus"
       style={{ backgroundImage: `url(${bg})` }}>
       <Navbar />
-      <div className="text-center my-8">
+      <div className="pt-24 text-center my-8">
         <p className="text-3xl font-bold">About US</p>
         <p className="mt-2">Pulvinar auctor nisl, volutpat turpis enim id.</p>
       </div>
