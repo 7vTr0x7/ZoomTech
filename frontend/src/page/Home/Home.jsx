@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "../../assets/images/Background.png";
+import bg from "../../assets/Background.png";
 import FAQSection from "../../components/home/FAQSection";
 import HeroSection from "../../components/home/HeroSection";
 import Projects from "../../components/home/Projects";

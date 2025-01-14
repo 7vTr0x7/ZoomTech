@@ -1,6 +1,6 @@
 import React from "react";
 
-import image from "../../assets/images/unsplash1.png";
+import image from "../../assets/unsplash1.png";
 
 const JoinTeamSection = () => {
   return (

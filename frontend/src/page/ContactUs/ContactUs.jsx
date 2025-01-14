@@ -1,6 +1,6 @@
 import React from "react";
 import ContactForm from "../../components/ContactUs/ContactForm";
-import bg from "../../assets/images/Background.png";
+import bg from "../../assets/Background.png";
 import Navbar from "./../../components/Navbar";
 import Footer from "./../../components/Footer";
 import OfficeAddress from "../../components/ContactUs/OfficeAddress";

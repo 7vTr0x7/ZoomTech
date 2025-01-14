@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import ContactForm from "../../components/ContactUs/ContactForm";
-import blogImage from "../../assets/images/blogImage.png";
+import blogImage from "../../assets/blogImage.png";
 import Breadcrumb from "../../components/Breadcrumb";
 import Posts from "../../components/Blogs/Posts";
 

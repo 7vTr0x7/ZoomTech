@@ -1,6 +1,6 @@
 import React from "react";
 import { GoArrowRight } from "react-icons/go";
-import dribbleShot from "../../assets/images/Dribbbleshot.png";
+import dribbleShot from "../../assets/Dribbbleshot.png";
 import { useNavigate } from "react-router-dom";
 
 const ServiceList = () => {

@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 
-import dribbleShot from "../../assets/images/DribbbleShot.png";
-import dribbleShot1 from "../../assets/images/Dribbbleshot1.png";
+import dribbleShot from "../../assets/DribbbleShot.png";
+import dribbleShot1 from "../../assets/Dribbbleshot1.png";
 
 const Projects = () => {
   const scrollRef = useRef(null);

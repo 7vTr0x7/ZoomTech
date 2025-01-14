@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/logo.png";
 import { IoIosArrowDown } from "react-icons/io";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";

@@ -4,7 +4,7 @@ import LeadershipTeam from "../../components/AboutUs/LeadershipTeam";
 import MissionSection from "../../components/AboutUs/MissionSection";
 import JoinTeamSection from "../../components/AboutUs/JoinTeamSection";
 import Navbar from "../../components/Navbar";
-import bg from "../../assets/images/Background.png";
+import bg from "../../assets/Background.png";
 import Footer from "../../components/Footer";
 import ContactForm from "../../components/ContactUs/ContactForm";
 

@@ -1,9 +1,9 @@
 import React from "react";
 
-import cube1 from "../../assets/images/serviceCube1.png";
-import cube2 from "../../assets/images/serviceCube2.png";
-import cube3 from "../../assets/images/serviceCube3.png";
-import cube4 from "../../assets/images/serviceCube4.png";
+import cube1 from "../../assets/serviceCube1.png";
+import cube2 from "../../assets/serviceCube2.png";
+import cube3 from "../../assets/serviceCube3.png";
+import cube4 from "../../assets/serviceCube4.png";
 
 const ServiceCubes = () => {
   return (

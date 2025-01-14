@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import bg from "../../../assets/images/servicesBg.png";
+import bg from "../../../assets/servicesBg.png";
 import ContactForm from "../../../components/ContactUs/ContactForm";
 import Footer from "../../../components/Footer";
 import Navbar from "../../../components/Navbar";

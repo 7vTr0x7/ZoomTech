@@ -1,7 +1,7 @@
 import React from "react";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 
-import contactImage from "../../assets/images/contactImage.png";
+import contactImage from "../../assets/contactImage.png";
 
 const ContactForm = () => {
   return (

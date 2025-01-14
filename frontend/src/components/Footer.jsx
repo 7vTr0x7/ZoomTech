@@ -10,7 +10,7 @@ import { MdEmail } from "react-icons/md";
 
 import { IoLocationSharp } from "react-icons/io5";
 
-import logo from "../assets/images/logo.png";
+import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Breadcrumb from "../../components/Breadcrumb";
-import projectDetails from "../../assets/images/projectDetail.png";
+import projectDetails from "../../assets/projectDetail.png";
 import ProjectInfo from "../../components/ProjectDetails/ProjectInfo";
 import OurWork from "./../../components/ProjectDetails/OurWork";
 import ContactForm from "../../components/ContactUs/ContactForm";

@@ -3,8 +3,8 @@ import ContactForm from "../../components/ContactUs/ContactForm";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
-import bg from "../../assets/images/servicesBg.png";
-import code from "../../assets/images/code.png";
+import bg from "../../assets/servicesBg.png";
+import code from "../../assets/code.png";
 import TechnologyCard from "../../components/Technologies/TechnologyCard";
 
 const Technologies = () => {

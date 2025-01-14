@@ -1,11 +1,11 @@
 import React from "react";
 
-import arrow1 from "../../assets/images/arrow1.png";
-import laptopImage from "../../assets/images/Rectangle.png";
-import company1 from "../../assets/images/Company1.png";
-import company2 from "../../assets/images/Company2.png";
-import company3 from "../../assets/images/Company3.png";
-import bars from "../../assets/images/group1.png";
+import arrow1 from "../../assets/arrow1.png";
+import laptopImage from "../../assets/Rectangle.png";
+import company1 from "../../assets/Company1.png";
+import company2 from "../../assets/Company2.png";
+import company3 from "../../assets/Company3.png";
+import bars from "../../assets/group1.png";
 
 import { LuArrowRight } from "react-icons/lu";
 import { useNavigate } from "react-router-dom";

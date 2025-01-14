@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "../../assets/images/servicesBg.png";
+import bg from "../../assets/servicesBg.png";
 
 const ServicesHeader = () => {
   return (
