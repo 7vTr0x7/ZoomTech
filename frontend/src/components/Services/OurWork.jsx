@@ -26,14 +26,9 @@ const OurWork = ({ service }) => {
               key={project.id}
               className="bg-gray-200 w-full h-80 rounded-lg flex items-center justify-center text-gray-500 cursor-pointer hover:shadow-lg transition-shadow"
               onClick={() =>
-                navigate(
-                  `/services/${service.service
-                    .toLowerCase()
-                    .replace(" ", "-")}/project-details`,
-                  {
-                    state: { service },
-                  }
-                )
+                navigate(`/services/${service.service}/project-details`, {
+                  state: { service },
+                })
               }>
               <span>{project.name}</span>
             </div>

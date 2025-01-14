@@ -48,14 +48,9 @@ const ServiceList = () => {
                 <p
                   className="text-black font-semibold text-xs sm:text-sm text-center"
                   onClick={() =>
-                    navigate(
-                      `/services/${service.service
-                        .toLowerCase()
-                        .replace(" ", "-")}/project-details`,
-                      {
-                        state: { service },
-                      }
-                    )
+                    navigate(`/services/${service.service}/project-details`, {
+                      state: { service },
+                    })
                   }>
                   View Projects
                 </p>
@@ -78,14 +73,9 @@ const ServiceList = () => {
             <button
               className="inline-flex items-center justify-center mt-4 md:mt-6 bg-black text-white py-2 px-4 rounded-3xl w-fit mx-auto md:mx-0"
               onClick={() =>
-                navigate(
-                  `/services/${service.service
-                    .toLowerCase()
-                    .replace(" ", "-")}`,
-                  {
-                    state: { service },
-                  }
-                )
+                navigate(`/services/${service.service}`, {
+                  state: { service },
+                })
               }>
               <span className="mr-6 font-medium">View Details</span>
               <GoArrowRight className="text-xl" />

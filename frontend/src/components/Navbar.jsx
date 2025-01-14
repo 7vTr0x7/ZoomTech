@@ -38,6 +38,11 @@ const Navbar = () => {
               onClick={() => navigate("/blogs")}>
               Blogs
             </li>
+            <li
+              className="cursor-pointer hover:text-blue-600"
+              onClick={() => navigate("/technologies")}>
+              Technologies
+            </li>
           </ul>
         </div>
 
@@ -56,25 +61,30 @@ const Navbar = () => {
       </div>
 
       {isMenuOpen && (
-        <ul className="mt-4 pace-y-2s text-sm font-medium md:hidden bg-white p-4 rounded-lg shadow-lg">
+        <ul className="mt-4 space-y-4 text-sm font-medium md:hidden bg-white p-6 rounded-lg shadow-lg">
           <li
-            className="flex items-center gap-1 cursor-pointer hover:text-blue-600"
+            className="flex items-center gap-2 cursor-pointer hover:text-blue-600 transition duration-300 ease-in-out"
             onClick={() => navigate("/services")}>
             <span>Services</span>
           </li>
           <li
-            className="cursor-pointer hover:text-blue-600"
+            className="cursor-pointer hover:text-blue-600 transition duration-300 ease-in-out"
             onClick={() => navigate("/about-us")}>
             About Us
           </li>
           <li
-            className="cursor-pointer hover:text-blue-600"
+            className="cursor-pointer hover:text-blue-600 transition duration-300 ease-in-out"
             onClick={() => navigate("/blogs")}>
             Blogs
           </li>
+          <li
+            className="cursor-pointer hover:text-blue-600"
+            onClick={() => navigate("/technologies")}>
+            Technologies
+          </li>
           <li>
             <button
-              className="w-full px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white transition duration-300"
+              className="w-full px-5 py-3 border border-black rounded-full bg-white hover:bg-black hover:text-white transition duration-300 ease-in-out transform hover:scale-105"
               onClick={() => navigate("/contact-us")}>
               Contact Us
             </button>

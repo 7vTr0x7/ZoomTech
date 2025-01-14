@@ -5,7 +5,8 @@ import ContactForm from "../../../components/ContactUs/ContactForm";
 import Footer from "../../../components/Footer";
 import Navbar from "../../../components/Navbar";
 
-import dribbleShot from "../../../assets/images/Dribbbleshot.png";
+import dribbleShot from "../../../assets/images/DribbbleShot.png";
+
 import UIUXFeatures from "../../../components/Services/UIUXFeatures";
 import OurWork from "../../../components/Services/OurWork";
 const Service = () => {
