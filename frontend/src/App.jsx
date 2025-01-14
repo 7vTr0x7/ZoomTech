@@ -7,9 +7,9 @@ import AboutUs from "./page/AboutUs/AboutUs";
 import Services from "./page/Services/Services";
 import Service from "./page/Services/features/Service";
 import ProjectDetails from "./page/ProjectDetails/ProjectDetails";
-import Blogs from "./page/blogs/blogs";
 import SingleBlog from "./components/Blogs/SingleBlog/SingleBlog";
 import Technologies from "./page/Technologies/Technologies";
+import Blogs from "./page/Blogs/Blogs";
 
 const App = () => {
   return (
